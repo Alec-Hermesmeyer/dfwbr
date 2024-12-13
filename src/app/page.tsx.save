@@ -1,0 +1,39 @@
+
+import { BookingCalendar } from "@/components/booking-calendar"
+import { HeroSection } from "@/components/hero-section"
+import { SiteHeader } from "@/components/site-header"
+import { SpecialEvents } from "@/components/special-events"
+
+export default function Home() {
+  return (
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader />
+      <main>
+        <HeroSection />
+        <div className="container py-12">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div>
+              <h2 className="mb-6 text-3xl font-bold">Book Your Cruise</h2>
+              <p className="mb-6 text-gray-600">
+                Join us for a memorable experience on Lake Ray Hubbard. Choose from
+                our regular cruises or special events.
+              </p>
+              <BookingCalendar />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-3xl font-bold">Real-time availability</h2>
+              <div className="rounded-lg border bg-gray-50 p-6">
+                <p className="text-sm text-gray-600">
+                  Select a date to see available cruise times and book your
+                  tickets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <SpecialEvents />
+      </main>
+    </div>
+  )
+}
+

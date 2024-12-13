@@ -1,42 +1,3 @@
-// import { BookingCalendar } from "@/components/booking-calendar";
-// import { HeroSection } from "@/components/hero-section";
-// import { SiteHeader } from "@/components/site-header";
-// import { SpecialEvents } from "@/components/special-events";
-
-// export default function Home() {
-//   return (
-//     <div className="flex min-h-screen flex-col bg-gray-100">
-//       <SiteHeader />
-//       <main className="flex flex-col items-center">
-//         <HeroSection />
-//         <div className="container mx-auto py-12 px-4">
-//           <div className="flex items-center justify-center mx-auto">
-//             <div className="space-y-6 text-center md:text-left">
-//               <h2 className="text-3xl font-bold text-gray-800">Book Your Cruise</h2>
-//               <p className="text-gray-600">
-//                 Join us for a memorable experience on Lake Ray Hubbard. Choose
-//                 from our regular cruises or special events.
-//               </p>
-//               <BookingCalendar />
-//             </div>
-//             <div className="space-y-6">
-//               <h2 className="text-3xl font-bold text-gray-800">Real-time Availability</h2>
-//               <div className="rounded-lg border bg-white shadow-md p-6">
-//                 <p className="text-sm text-gray-600">
-//                   Select a date to see available cruise times and book your
-//                   tickets.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="w-full bg-white py-12 flex items-center justify-center mx-auto">
-//           <SpecialEvents />
-//         </div>
-//       </main>
-//     </div>
-//   );
-// }
 'use client';
 import { Button } from "@/components/ui-components";
 import { Input } from "@/components/ui-components";
@@ -44,7 +5,6 @@ import { Anchor, Ship, MapPin, Users, Star } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import { SiteHeader } from "@/components/site-header";
 
 export default function LandingPage() {
   const carouselRef = useRef(null);
@@ -332,4 +292,3 @@ export default function LandingPage() {
     </div>
   );
 }
-
