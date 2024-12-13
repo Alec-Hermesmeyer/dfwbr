@@ -79,7 +79,7 @@ export default function LandingPage() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="relative w-full px-6 py-12 md:py-24 lg:py-12 xl:pt-12 xl:pb-40 xl:px-40 bg-slate-100 overflow-hidden">
+        <section className="relative w-full px-6 py-24  md:py-24 lg:py-12 xl:pt-12 xl:pb-40 xl:px-40 bg-slate-100 overflow-hidden">
           {/* Clip-Path */}
           {/* <div className="absolute inset-x-0 -bottom-6 left-6 z-10">
             <div
