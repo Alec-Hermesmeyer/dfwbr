@@ -101,7 +101,7 @@ export default function LandingPage() {
                     </small>
                   </h1>
                   <p className="max-w-[600px] text-gray-500 md:text-xl">
-                    Experience the beauty of Dallas from a unique perspective. Join us for unforgettable boat tours on the city's stunning waterways.
+                    Experience the beauty of Dallas from a unique perspective. Join us for unforgettable boat tours on the city&apos;s stunning waterways.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -159,7 +159,7 @@ export default function LandingPage() {
                     <MapPin className="h-10 w-10 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-slate-200 py-2">Special Events Tour</h3>
-                  <p className="text-white pb-2">Discover Dallas' iconic landmarks from a unique water perspective.</p>
+                  <p className="text-white pb-2">Discover Dallas&apos; iconic landmarks from a unique water perspective.</p>
                 </div>
               </div>
               <div className="flex flex-col items-center space-y-4 text-center">
