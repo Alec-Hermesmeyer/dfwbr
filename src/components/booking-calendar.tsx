@@ -33,10 +33,10 @@ export function BookingCalendar() {
   }
 
   return (
-    <Card className="w-full max-w-md">
-      <CardHeader>
+    <Card className="w-full max-w-[95%] sm:max-w-md mx-auto p-2 sm:p-4">
+      <CardHeader className="p-4 sm:p-6">
         <div className="flex items-center justify-between">
-          <CardTitle>Book online</CardTitle>
+          <CardTitle className="text-base sm:text-xl font-bold">Book online</CardTitle>
           <div className="flex items-center space-x-2">
             <Button
               variant="outline"
@@ -46,7 +46,7 @@ export function BookingCalendar() {
               <ChevronLeft className="h-4 w-4" />
               <span className="sr-only">Previous month</span>
             </Button>
-            <div className="min-w-[100px] text-center font-medium">
+            <div className="min-w-[80px] sm:min-w-[100px] text-center font-medium text-sm sm:text-base">
               {formatMonthYear(month)}
             </div>
             <Button
@@ -60,13 +60,13 @@ export function BookingCalendar() {
           </div>
         </div>
       </CardHeader>
-      <CardContent className="w-full flex items-center justify-center">
+      <CardContent className="w-full flex flex-col items-center justify-center p-2 sm:p-4">
         <Calendar
           mode="single"
           selected={date}
           onSelect={setDate}
           month={month}
-          className="rounded-md border max-w-5xl w-full flex items-center justify-center"
+          className="rounded-md border w-full"
         />
       </CardContent>
     </Card>

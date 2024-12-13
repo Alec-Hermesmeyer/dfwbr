@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Calendar } from 'lucide-react'
+import { Calendar } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -12,9 +12,9 @@ import {
 
 export function SpecialEvents() {
   return (
-    <section className="container py-12">
-      <h2 className="mb-8 text-3xl font-bold">Special Events</h2>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <section className="container py-12 px-4 sm:px-6 md:px-8">
+      <h2 className="mb-8 text-2xl sm:text-3xl font-bold">Special Events</h2>
+      <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card>
           <CardHeader>
             <CardTitle>Jazz Cruise</CardTitle>
@@ -29,7 +29,7 @@ export function SpecialEvents() {
                 className="object-cover"
               />
             </div>
-            <p className="mb-4">
+            <p className="mb-4 text-sm sm:text-base">
               Join us for an evening of jazz music and fine dining on Lake Ray
               Hubbard.
             </p>
@@ -53,7 +53,7 @@ export function SpecialEvents() {
                 className="object-cover"
               />
             </div>
-            <p className="mb-4">
+            <p className="mb-4 text-sm sm:text-base">
               Experience the flavors and festivities of Mardi Gras on our special
               dinner cruise.
             </p>
@@ -67,4 +67,3 @@ export function SpecialEvents() {
     </section>
   )
 }
-

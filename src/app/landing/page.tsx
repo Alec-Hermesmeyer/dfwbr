@@ -1,8 +1,8 @@
 'use client';
+import { SiteHeader } from "@/components/site-header";
 import { Button } from "@/components/ui-components";
 import { Input } from "@/components/ui-components";
 import { Anchor,  MapPin, Users } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
@@ -56,28 +56,8 @@ export default function LandingPage() {
   ];
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
-      <header className="px-4 py-16 lg:px-6 h-16 flex items-center bg-white">
-        <Link className="flex items-center justify-center" href="#">
-          <Image
-            alt="Tour boat on the lake"
-            className="mx-auto"
-            height="50"
-            src="/Logo.png"
-            width="150"
-          />
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm text-slate-900 font-medium hover:underline underline-offset-4" href="#tours">
-            Tours
-          </Link>
-          <Link className="text-sm text-slate-900 font-medium hover:underline underline-offset-4" href="#about">
-            About
-          </Link>
-          <Link className="text-sm text-slate-900 font-medium hover:underline underline-offset-4" href="#contact">
-            Contact
-          </Link>
-        </nav>
-      </header>
+        
+        <SiteHeader />
       <main className="flex-1">
         <section className="relative w-full px-6 py-24  md:py-24 lg:py-12 xl:pt-12 xl:pb-40 xl:px-40 bg-slate-100 overflow-hidden">
           {/* Clip-Path */}
