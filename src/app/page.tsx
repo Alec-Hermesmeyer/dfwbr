@@ -9,7 +9,7 @@ export default function Home() {
       <SiteHeader />
       <main className="flex flex-col items-center">
         <HeroSection />
-        <div className="container mx-auto py-12 px-4">
+        <div className="container mx-auto py-12 px-20 w-full">
           <div className="flex items-center justify-center mx-auto">
             <div className="space-y-6 text-center md:text-left">
               <h2 className="text-3xl font-bold text-gray-800">Book Your Cruise</h2>
