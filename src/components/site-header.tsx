@@ -16,9 +16,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white">
       <div className="container flex h-16 items-center">
-        <Link href="/" className="mr-6">
+        <Link href="/" className="mr-6 pl-12">
           <Image
-            src="/placeholder.svg"
+            src="/Logo.png"
             alt="DFW Boat Ride"
             width={150}
             height={50}

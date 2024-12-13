@@ -4,7 +4,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/placeholder.svg')",
+          backgroundImage: "url('/docked.jpeg')",
         }}
       >
         <div className="absolute inset-0 bg-black/40" />

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRef } from "react";
 
 export default function LandingPage() {
-  const carouselRef = useRef(null);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
     if (carouselRef.current) {
