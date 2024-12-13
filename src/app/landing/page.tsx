@@ -1,7 +1,7 @@
 'use client';
 import { Button } from "@/components/ui-components";
 import { Input } from "@/components/ui-components";
-import { Anchor, Ship, MapPin, Users, Star } from "lucide-react";
+import { Anchor,  MapPin, Users } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";

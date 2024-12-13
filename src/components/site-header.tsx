@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { ChevronDown } from 'lucide-react'
+
 
 import {
   NavigationMenu,
@@ -10,7 +10,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
-import { cn } from "@/lib/utils"
+
 
 export function SiteHeader() {
   return (

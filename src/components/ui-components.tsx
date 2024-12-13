@@ -70,7 +70,10 @@ export function CardContent({ className, ...props }: React.HTMLAttributes<HTMLDi
 }
 
 // Input Component
-export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+export interface InputProps 
+extends React.InputHTMLAttributes<HTMLInputElement> {
+  type: "text" | "password" | "email" | "number" | "tel" | "url"
+}
 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
@@ -87,7 +90,10 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
 Input.displayName = "Input"
 
 // Label Component
-export interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {}
+export interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
+  children: React.ReactNode
+  
+}
 
 export const Label = React.forwardRef<HTMLLabelElement, LabelProps>(
   ({ className, ...props }, ref) => (

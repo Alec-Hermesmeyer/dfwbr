@@ -24,7 +24,7 @@ function getMonthDays(year: number, month: number) {
   const firstDayOfWeek = firstDayOfMonth.getDay() // 0-based (Sunday)
   const daysInMonth = lastDayOfMonth.getDate()
 
-  let days: Date[] = []
+  const days: Date[] = []
 
   // If showOutsideDays is true, we need to fill from previous month
   // For simplicity, this will be handled outside.
@@ -52,7 +52,6 @@ function formatMonthYear(date: Date): string {
 function Calendar({
   className,
   showOutsideDays = true,
-  mode = "single",
   selected,
   onSelect,
   month: propMonth,
