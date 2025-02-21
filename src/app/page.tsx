@@ -1,13 +1,17 @@
 'use client';
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { BookingCalendar } from "@/components/booking-calendar";
 import { HeroSection } from "@/components/hero-section";
-import { SiteHeader } from "@/components/site-header";
+import { Nav } from "@/components/nav"
 import { SpecialEvents } from "@/components/special-events";
 import Image from "next/image";
-import { Button } from "@/components/ui-components";
+import Script from 'next/script'
+import { Button, Input } from "@/components/ui-components";
+import { FareHarborCalendar } from "@/components/fare-harbor-calendar";
 
 export default function Home() {
+  
+  
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const scrollLeft = () => {
@@ -56,39 +60,18 @@ export default function Home() {
   ];
   return (
     <div className="flex min-h-screen flex-col bg-gray-100">
-      <SiteHeader />
+      <Nav />
       <main className="flex flex-col items-center">
         <HeroSection />
 
-        <div className="container mx-auto py-12 px-4 md:px-20 w-full">
-          <div className="flex flex-col items-center justify-center space-y-8 md:flex-row md:space-y-0 md:space-x-16 mx-auto">
-            {/* Booking Section */}
-            <div className="space-y-6 text-center md:text-left md:w-1/2">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                Book Your Cruise
-              </h2>
-              <p className="text-sm md:text-base text-gray-600">
-                Join us for a memorable experience on Lake Ray Hubbard. Choose
-                from our regular cruises or special events.
-              </p>
-              <BookingCalendar />
-            </div>
-
-            {/* Availability Section */}
-            <div className="space-y-6 md:w-1/2 text-center md:text-left">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-                Real-time Availability
-              </h2>
-              <div className="rounded-lg border bg-white shadow-md p-4 md:p-6">
-                <p className="text-xs md:text-sm text-gray-600">
-                  Select a date to see available cruise times and book your
-                  tickets.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div className="container mx-auto py-8">
+      <h1 className="text-2xl font-bold mb-6">Book Your Ride</h1>
+      <div className="rounded-lg border bg-card text-card-foreground shadow-sm">
+        <div className="p-6">
+          <FareHarborCalendar />
         </div>
-
+      </div>
+    </div>
         {/* Special Events Section */}
         <div className="w-full bg-white py-12 flex items-center justify-center mx-auto px-4 md:px-20">
           <SpecialEvents />
@@ -166,7 +149,7 @@ export default function Home() {
             </div>
           </div>
          
-          <div className="absolute inset-x-0 -bottom-0 sm:-bottom-32 md:-bottom-0 lg:-bottom-0 -z-0">
+          <div className="absolute inset-x-0 -bottom-0 sm:-bottom-32 md:-bottom-0 lg:-bottom-1 -z-0">
             <div
               className="w-full h-32 sm:h-48 md:h-48 lg:h-52 bg-white shadow-2xl"
               style={{ clipPath: "polygon(50% 0, 100% 100%, 0 100%)" }}
@@ -192,6 +175,30 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <section
+          id="book-now"
+          className="relative w-full px-4 py-12 md:py-24 lg:py-32 bg-blue-800 text-white"
+        >
+          <div className="max-w-7xl mx-auto z-20">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Ready to Set Sail?</h2>
+              <p className="max-w-[600px] text-gray-200 md:text-xl">
+                Book your DFW Boat Ride experience today and create memories that will last a lifetime.
+              </p>
+              <form className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2 max-w-sm w-full">
+                <Input
+                  className="flex-1 bg-white text-gray-900 rounded-md"
+                  placeholder="Enter your email"
+                  type="email"
+                />
+                <Button className=" text-blue-600 py-12 hover:bg-gray-200" type="submit">
+                  Book Now
+                </Button>
+              </form>
+            </div>
+          </div>
+        </section>
+
       </main>
     </div>
   );

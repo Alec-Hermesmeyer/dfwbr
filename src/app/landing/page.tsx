@@ -1,5 +1,5 @@
 'use client';
-import { SiteHeader } from "@/components/site-header";
+import { Nav } from "@/components/nav"
 import { Button } from "@/components/ui-components";
 import { Input } from "@/components/ui-components";
 import { Anchor,  MapPin, Users } from "lucide-react";
@@ -57,9 +57,9 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen overflow-x-hidden">
         
-        <SiteHeader />
+        <Nav />
       <main className="flex-1">
-        <section className="relative w-full px-6 py-24  md:py-24 lg:py-12 xl:pt-12 xl:pb-40 xl:px-40 bg-slate-100 overflow-hidden">
+        <section className="relative w-full px-6 py-24  md:py-24 lg:py-16 xl:pt-24 xl:pb-40 xl:px-40 bg-slate-100 overflow-hidden">
           {/* Clip-Path */}
           {/* <div className="absolute inset-x-0 -bottom-6 left-6 z-10">
             <div

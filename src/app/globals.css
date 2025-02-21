@@ -70,3 +70,10 @@ body {
     @apply bg-background text-foreground;
   }
 }
+.NavigationMenuItem {
+  position: relative;
+}
+.NavigationMenuContent {
+  width: auto;
+  min-width: 200px; /* Adjust as needed */
+}
